@@ -17,10 +17,10 @@ class joint:
         self.type=type#0为一般，1为支座约束，2为铰链约束
         self.ext_F=ext_F
 
-joints=[joint([1,0]),joint([2,0]),joint([3,0]),joint([0,1],2),joint([1,1],ext_F=[0,-10]),joint([2,1],ext_F=[0,-20]),joint([3,1],ext_F=[-10,-10*np.sqrt(3)]),joint([4,1],1),]
+joints=[joint([1,1]),joint([2,1]),joint([3,1]),joint([0,0],2),joint([1,0],ext_F=[0,-20]),joint([2,0],ext_F=[0,-20]),joint([3,0],ext_F=[0,-20]),joint([4,0],1),]
 num=len(joints)
 pos=np.array([j.pos for j in joints])
-Adj=np.array([[0,3],[3,4],[0,4],[0,1],[1,4],[4,5],[1,5],[1,2],[1,6],[5,6],[2,6],[6,7],[2,7]])#表述桁架中杆的邻接矩阵
+Adj=np.array([[0,3],[3,4],[0,4],[0,1],[0,5],[4,5],[1,5],[1,2],[5,2],[5,6],[2,6],[6,7],[2,7]])#表述桁架中杆的邻接矩阵
 
 pos2=pos/6+0.1#可视化的位置
 pos2[:,1]+=0.3
