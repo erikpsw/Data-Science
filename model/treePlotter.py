@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
- 
- 
+
+size=13
+fontsize=20
 """绘决策树的函数"""
 decisionNode = dict(boxstyle="sawtooth", fc="0.8")  # 定义分支点的样式
 leafNode = dict(boxstyle="round4", fc="0.8")  # 定义叶节点的样式
 arrow_args = dict(arrowstyle="<-")  # 定义箭头标识样式
- 
- 
+
 # 计算树的叶子节点数量
 def getNumLeafs(myTree):
    numLeafs = 0
@@ -39,7 +39,7 @@ def getTreeDepth(myTree):
 def plotNode(nodeTxt, centerPt, parentPt, nodeType):
    createPlot.ax1.annotate(nodeTxt, xy=parentPt, xycoords='axes fraction', \
                            xytext=centerPt, textcoords='axes fraction', va="center", ha="center", \
-                           bbox=nodeType, arrowprops=arrow_args)
+                           bbox=nodeType, arrowprops=arrow_args,size=fontsize)
  
  
 # 标箭头上的文字
@@ -47,7 +47,7 @@ def plotMidText(cntrPt, parentPt, txtString):
    lens = len(txtString)
    xMid = (parentPt[0] + cntrPt[0]) / 2.0 - lens * 0.002
    yMid = (parentPt[1] + cntrPt[1]) / 2.0
-   createPlot.ax1.text(xMid, yMid, txtString)
+   createPlot.ax1.text(xMid, yMid, txtString,fontdict={'fontsize':fontsize})
  
  
 def plotTree(myTree, parentPt, nodeTxt):
@@ -73,7 +73,8 @@ def plotTree(myTree, parentPt, nodeTxt):
  
  
 def createPlot(inTree):
-   fig = plt.figure(1, facecolor='white')
+   fig = plt.figure(num=1,figsize=(size,size ), facecolor='white')
+   
    fig.clf()
    axprops = dict(xticks=[], yticks=[])
    createPlot.ax1 = plt.subplot(111, frameon=False, **axprops)
