@@ -1,0 +1,6 @@
+[RESOURCES]
+[VARIABLES]
+Process 3.NumberIn
+Part Arrival.NumberOut
+Dispose 1.NumberOut
+Process 3.NumberOut

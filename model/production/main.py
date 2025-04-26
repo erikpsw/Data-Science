@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 plt.rcParams['text.usetex'] = False
 plt.rc("font",family='MicroSoft YaHei')
 
-df = pd.read_csv('test_data1.csv', sep=' ')
 df = pd.read_csv('data.csv', sep=' ')
 
 df['任务时间'] = df['任务时间'].astype(str).str.extract('(\d+)').astype(float)
@@ -360,6 +359,27 @@ def calculate_smoothness_index(workstations, task_times):
     
     return smoothness_index
 
+def calculate_balance_rate(workstations, task_times, cycle_time):
+    """
+    计算平衡率(η)
+    参数:
+        workstations: 工位分配方案
+        task_times: 任务时间字典
+        cycle_time: 循环时间
+    返回:
+        balance_rate: 平衡率 (0-1之间，越接近1越好)
+    """
+    # 计算总任务时间
+    total_task_time = sum(task_times.values())
+    
+    # 计算工位数量
+    num_stations = len(workstations)
+    
+    # 计算平衡率 η = Σti / (T * n)
+    balance_rate = total_task_time / (cycle_time * num_stations)
+    
+    return balance_rate
+
 # 在初始分配之后执行Trade and Transfer阶段
 print("\n开始执行Trade and Transfer阶段均衡分析...")
 balanced_workstations = trade_and_transfer(workstations, predecessors, successors, task_times, cycle_time)
@@ -375,7 +395,9 @@ for i, station in enumerate(balanced_workstations):
 
 # RPW值和任务时间的对比
 si = calculate_smoothness_index(workstation_assignments.values(), task_times)
+br = calculate_balance_rate(workstation_assignments.values(), task_times, cycle_time)
 print(f"\nRPW的平滑指数(SI): {si:.2f}")
+print(f"RPW的平衡率(η): {br:.4f}")
 # 在显示优化结果时添加平滑指数计算
 print("\n计算优化前的平滑指数...")
 si = calculate_smoothness_index(workstations, task_times)
@@ -383,6 +405,19 @@ print(f"平滑指数(SI): {si:.2f}")
 print("\n计算优化后的平滑指数...")
 si = calculate_smoothness_index(balanced_workstations, task_times)
 print(f"平滑指数(SI): {si:.2f}")
+
+# 在显示优化结果时添加平滑率计算
+print("\n计算优化前的平滑指数和平衡率...")
+si = calculate_smoothness_index(workstations, task_times)
+br = calculate_balance_rate(workstations, task_times, cycle_time)
+print(f"平滑指数(SI): {si:.2f}")
+print(f"平衡率(η): {br:.4f}")
+
+print("\n计算优化后的平滑指数和平衡率...")
+si = calculate_smoothness_index(balanced_workstations, task_times)
+br = calculate_balance_rate(balanced_workstations, task_times, cycle_time)
+print(f"平滑指数(SI): {si:.2f}")
+print(f"平衡率(η): {br:.4f}")
 
 # 探索莫迪和杨法作业元素分配阶段中，不同任务排序规则对所得到工位数量的影响
 def sorting_rule_rpw(task_id):
@@ -465,6 +500,7 @@ for rule_name, rule_func in sorting_rules.items():
     max_station_time = max(station_times) if station_times else 0
     avg_station_time = sum(station_times) / len(station_times) if station_times else 0
     si = calculate_smoothness_index(assigned_workstations, task_times)
+    br = calculate_balance_rate(assigned_workstations, task_times, cycle_time)
     
     # 存储结果
     results_allocation[rule_name] = {
@@ -472,6 +508,7 @@ for rule_name, rule_func in sorting_rules.items():
         "最大工位时间": max_station_time,
         "平均工位时间": avg_station_time,
         "平滑指数": si,
+        "平衡率": br,
         "工位分配": assigned_workstations
     }
     
@@ -480,6 +517,7 @@ for rule_name, rule_func in sorting_rules.items():
     print(f"最大工位时间: {max_station_time:.2f}")
     print(f"平均工位时间: {avg_station_time:.2f}")
     print(f"平滑指数(SI): {si:.2f}")
+    print(f"平衡率(η): {br:.4f}")
     print("工位分配详情:")
     for i, station in enumerate(assigned_workstations, 1):
         station_time = sum(task_times[task] for task in station)
@@ -487,11 +525,11 @@ for rule_name, rule_func in sorting_rules.items():
 
 # 结果对比表格
 print("\n不同排序规则结果对比:")
-print("-" * 80)
-print(f"{'排序规则':<20} | {'工位数量':<10} | {'最大工位时间':<12} | {'平均工位时间':<12} | {'平滑指数':<10}")
-print("-" * 80)
+print("-" * 100)
+print(f"{'排序规则':<20} | {'工位数量':<10} | {'最大工位时间':<12} | {'平均工位时间':<12} | {'平滑指数':<10} | {'平衡率':<10}")
+print("-" * 100)
 for rule, result in results_allocation.items():
-    print(f"{rule:<20} | {result['工位数量']:<10} | {result['最大工位时间']:.2f}{' ':<5} | {result['平均工位时间']:.2f}{' ':<5} | {result['平滑指数']:.2f}")
+    print(f"{rule:<20} | {result['工位数量']:<10} | {result['最大工位时间']:.2f}{' ':<5} | {result['平均工位时间']:.2f}{' ':<5} | {result['平滑指数']:.2f}{' ':<3} | {result['平衡率']:.4f}")
 
 # 探索莫迪和杨法Trade and Transfer阶段中，不同工位选择规则对所得到平衡指数的影响
 def max_min_time_selection(station_times):
@@ -764,6 +802,7 @@ for rule_name, rule_func in selection_rules.items():
     min_station_time = min(station_times) if station_times else 0
     avg_station_time = sum(station_times) / len(station_times) if station_times else 0
     si = calculate_smoothness_index(balanced_ws, task_times)
+    br = calculate_balance_rate(balanced_ws, task_times, cycle_time)
     
     # 存储结果
     results_tt[rule_name] = {
@@ -773,6 +812,7 @@ for rule_name, rule_func in selection_rules.items():
         "时间差": max_station_time - min_station_time,
         "平均工位时间": avg_station_time,
         "平滑指数": si,
+        "平衡率": br,
         "工位分配": balanced_ws
     }
     
@@ -783,6 +823,7 @@ for rule_name, rule_func in selection_rules.items():
     print(f"工位时间差: {max_station_time - min_station_time:.2f}")
     print(f"平均工位时间: {avg_station_time:.2f}")
     print(f"平滑指数(SI): {si:.2f}")
+    print(f"平衡率(η): {br:.4f}")
     print("工位分配详情:")
     for i, station in enumerate(balanced_ws, 1):
         station_time = sum(task_times[task] for task in station)
@@ -790,11 +831,11 @@ for rule_name, rule_func in selection_rules.items():
 
 # 结果对比表格
 print("\n不同工位选择规则结果对比:")
-print("-" * 95)
-print(f"{'选择规则':<20} | {'迭代次数':<10} | {'最大时间':<10} | {'最小时间':<10} | {'时间差':<8} | {'平滑指数':<10}")
-print("-" * 95)
+print("-" * 115)
+print(f"{'选择规则':<20} | {'迭代次数':<10} | {'最大时间':<10} | {'最小时间':<10} | {'时间差':<8} | {'平滑指数':<10} | {'平衡率':<10}")
+print("-" * 115)
 for rule, result in results_tt.items():
-    print(f"{rule:<20} | {result['迭代次数']:<10} | {result['最大工位时间']:.2f}{' ':<3} | {result['最小工位时间']:.2f}{' ':<3} | {result['时间差']:.2f}{' ':<1} | {result['平滑指数']:.2f}")
+    print(f"{rule:<20} | {result['迭代次数']:<10} | {result['最大工位时间']:.2f}{' ':<3} | {result['最小工位时间']:.2f}{' ':<3} | {result['时间差']:.2f}{' ':<1} | {result['平滑指数']:.2f}{' ':<3} | {result['平衡率']:.4f}")
 
 # 绘制结果比较图表
 try:
@@ -804,16 +845,15 @@ try:
     rules = list(results_allocation.keys())
     workstations_count = [results_allocation[rule]['工位数量'] for rule in rules]
     smoothness_indices = [results_allocation[rule]['平滑指数'] for rule in rules]
+    balance_rates = [results_allocation[rule]['平衡率'] for rule in rules]
     
     x = range(len(rules))
     
-    fig, ax1 = plt.subplots(figsize=(12, 6))
+    fig, ax1 = plt.subplots(figsize=(14, 7))
     
     # 工位数量柱状图
-    bars = ax1.bar(x, workstations_count, width=0.4, alpha=0.7, color='blue', label='工位数量')
+    bars = ax1.bar([i-0.2 for i in x], workstations_count, width=0.3, alpha=0.7, color='blue', label='工位数量')
     ax1.set_ylabel('工位数量', fontsize=12)
-    ax1.set_xticks(x)
-    ax1.set_xticklabels(rules, rotation=45, ha='right', fontsize=10)
     
     # 在柱状图上标注数值
     for bar in bars:
@@ -821,55 +861,15 @@ try:
         ax1.text(bar.get_x() + bar.get_width()/2., height + 0.1,
                  f'{int(height)}', ha='center', va='bottom')
     
-    # 平滑指数折线图
+    # 平滑指数和平衡率的折线图
     ax2 = ax1.twinx()
-    ax2.plot(x, smoothness_indices, 'r-o', linewidth=2, label='平滑指数')
-    ax2.set_ylabel('平滑指数', fontsize=12, color='r')
+    line1 = ax2.plot(x, smoothness_indices, 'r-o', linewidth=2, label='平滑指数')
+    ax2.set_ylabel('指标值', fontsize=12)
     
     # 在折线上标注数值
     for i, si in enumerate(smoothness_indices):
-        ax2.annotate(f'{si:.2f}', (x[i], si), xytext=(0, 10), 
+        ax2.annotate(f'{si:.2f}', (x[i], si), xytext=(-10, 10), 
                      textcoords='offset points', ha='center', va='bottom', color='r')
-    
-    # 图例
-    lines1, labels1 = ax1.get_legend_handles_labels()
-    lines2, labels2 = ax2.get_legend_handles_labels()
-    ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left')
-    
-    plt.title('莫迪和杨法分配阶段：不同排序规则对工位数量和平滑指数的影响', fontsize=14)
-    plt.tight_layout()
-    plt.savefig('allocation_rules_comparison.png')
-    
-    # Trade and Transfer规则比较图
-    plt.figure(figsize=(12, 6))
-    rules = list(results_tt.keys())
-    iterations = [results_tt[rule]['迭代次数'] for rule in rules]
-    time_diffs = [results_tt[rule]['时间差'] for rule in rules]
-    si_values = [results_tt[rule]['平滑指数'] for rule in rules]
-    
-    x = range(len(rules))
-    
-    fig, ax1 = plt.subplots(figsize=(12, 6))
-    
-    # 迭代次数柱状图
-    bars = ax1.bar([i-0.2 for i in x], iterations, width=0.4, alpha=0.7, color='green', label='迭代次数')
-    ax1.set_ylabel('迭代次数', fontsize=12)
-    
-    # 平滑指数柱状图
-    ax2 = ax1.twinx()
-    bars2 = ax2.bar([i+0.2 for i in x], si_values, width=0.4, alpha=0.7, color='orange', label='平滑指数')
-    ax2.set_ylabel('平滑指数', fontsize=12)
-    
-    # 在柱状图上标注数值
-    for bar in bars:
-        height = bar.get_height()
-        ax1.text(bar.get_x() + bar.get_width()/2., height + 0.1,
-                 f'{int(height)}', ha='center', va='bottom', color='green')
-    
-    for bar in bars2:
-        height = bar.get_height()
-        ax2.text(bar.get_x() + bar.get_width()/2., height + 0.1,
-                 f'{height:.2f}', ha='center', va='bottom', color='orange')
     
     ax1.set_xticks(x)
     ax1.set_xticklabels(rules, rotation=45, ha='right', fontsize=10)
@@ -879,11 +879,9 @@ try:
     lines2, labels2 = ax2.get_legend_handles_labels()
     ax1.legend(lines1 + lines2, labels1 + labels2, loc='upper left')
     
-    plt.title('莫迪和杨法Trade and Transfer阶段：不同工位选择规则的影响', fontsize=14)
+    plt.title('莫迪和杨法分配阶段：不同排序规则对工位数量、平滑指数和平衡率的影响', fontsize=14)
     plt.tight_layout()
-    plt.savefig('tt_rules_comparison.png')
-    
-    print("\n已生成图表并保存为 'allocation_rules_comparison.png' 和 'tt_rules_comparison.png'")
+    plt.savefig('allocation_rules_comparison.png')
 except ImportError:
     print("\n无法生成图表，请安装matplotlib库")
 except Exception as e:

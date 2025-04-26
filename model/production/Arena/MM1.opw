@@ -1,0 +1,7 @@
+[RESOURCES]
+Machine
+[VARIABLES]
+Part Arrival.NumberOut
+Dispose 1.NumberOut
+drilling.NumberOut
+drilling.NumberIn

@@ -1,0 +1,235 @@
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 1 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/26/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0531     (Corr)     .80010     1.3059       5996    
+Part.NVATime                                .00000     .00000     .00000     .00000       5996    
+Part.WaitTime                               .00000     .00000     .00000     .00000       5996    
+Part.TranTime                               .00000     .00000     .00000     .00000       5996    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5996    
+Part.TotalTime                              1.0531     (Corr)     .80010     1.3059       5996    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    .70157     .00374     .00000     2.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               5995.0    
+Part.NumberOut                              5996.0    
+System.NumberOut                            5996.0    
+
+Beginning replication 2 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 2 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/26/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0535     .00376     .80002     1.3059       5987    
+Part.NVATime                                .00000     .00000     .00000     .00000       5987    
+Part.WaitTime                               .00000     .00000     .00000     .00000       5987    
+Part.TranTime                               .00000     .00000     .00000     .00000       5987    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5987    
+Part.TotalTime                              1.0535     .00376     .80002     1.3059       5987    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    .70084     .00365     .00000     2.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               5987.0    
+Part.NumberOut                              5987.0    
+System.NumberOut                            5987.0    
+
+Beginning replication 3 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 3 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/26/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0514     .00352     .80014     1.3057       6014    
+Part.NVATime                                .00000     .00000     .00000     .00000       6014    
+Part.WaitTime                               .00000     .00000     .00000     .00000       6014    
+Part.TranTime                               .00000     .00000     .00000     .00000       6014    
+Part.OtherTime                              .00000     .00000     .00000     .00000       6014    
+Part.TotalTime                              1.0514     .00352     .80014     1.3057       6014    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    .70257     .00376     .00000     2.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               6014.0    
+Part.NumberOut                              6014.0    
+System.NumberOut                            6014.0    
+
+Beginning replication 4 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 4 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/26/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0555     .00329     .80001     1.3059       5986    
+Part.NVATime                                .00000     .00000     .00000     .00000       5986    
+Part.WaitTime                               .00000     .00000     .00000     .00000       5986    
+Part.TranTime                               .00000     .00000     .00000     .00000       5986    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5986    
+Part.TotalTime                              1.0555     .00329     .80001     1.3059       5986    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    .70200     .00466     .00000     2.0000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               5986.0    
+Part.NumberOut                              5986.0    
+System.NumberOut                            5986.0    
+
+Beginning replication 5 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 5 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/26/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0499     .00369     .80005     1.3059       5987    
+Part.NVATime                                .00000     .00000     .00000     .00000       5987    
+Part.WaitTime                               .00000     .00000     .00000     .00000       5987    
+Part.TranTime                               .00000     .00000     .00000     .00000       5987    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5987    
+Part.TotalTime                              1.0499     .00369     .80005     1.3059       5987    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    .69845     .00472     .00000     2.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               5987.0    
+Part.NumberOut                              5987.0    
+System.NumberOut                            5987.0    
+
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Output Summary for 5 Replications
+
+Project: Unnamed Project                                             Run execution date : 4/26/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Part.NumberIn                               5993.8     14.725     5986.0     6014.0     5
+Part.NumberOut                              5994.0     14.767     5986.0     6014.0     5
+System.NumberOut                            5994.0     14.767     5986.0     6014.0     5
+
+Simulation run time: 0.02 minutes.
+Simulation run complete.

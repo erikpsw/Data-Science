@@ -1,0 +1,11 @@
+[RESOURCES]
+Machine
+[VARIABLES]
+Decide 4.NumberOut False
+Part Arrival.NumberOut
+M1.NumberOut
+M2.NumberOut
+Dispose 1.NumberOut
+M1.NumberIn
+M2.NumberIn
+Decide 4.NumberOut True

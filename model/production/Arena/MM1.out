@@ -1,0 +1,272 @@
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 1 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/25/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/25/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Friday, April 25, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0878     .02391      2.0079E-4 9.0113       6021    
+Part.NVATime                                .00000     .00000     .00000     .00000       6021    
+Part.WaitTime                               2.9234     .54490     .00000     136.33       6021    
+Part.TranTime                               .00000     .00000     .00000     .00000       6021    
+Part.OtherTime                              .00000     .00000     .00000     .00000       6021    
+Part.TotalTime                              4.0113     .56265      8.3327E-4 137.42       6021    
+drilling.Queue.WaitingTime                  2.9248     .54490     .00000     136.33       6022    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    2.7066     .45602     .00000     24.000     12.000    
+Machine.NumberBusy                          .72787     .02902     .00000     1.0000     1.0000    
+Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Machine.Utilization                         .72787     .02902     .00000     1.0000     1.0000    
+drilling.Queue.NumberInQueue                1.9787     .43147     .00000     23.000     11.000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               6033.0    
+Part.NumberOut                              6021.0    
+Machine.NumberSeized                        6022.0    
+Machine.ScheduledUtilization                .72787    
+System.NumberOut                            6021.0    
+
+Beginning replication 2 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 2 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/25/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/25/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Friday, April 25, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0508     .02372      5.1016E-4 8.8703       5939    
+Part.NVATime                                .00000     .00000     .00000     .00000       5939    
+Part.WaitTime                               2.2907     .48677     .00000     116.23       5939    
+Part.TranTime                               .00000     .00000     .00000     .00000       5939    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5939    
+Part.TotalTime                              3.3415     .50478     .00150     116.58       5939    
+drilling.Queue.WaitingTime                  2.2907     .48677     .00000     116.23       5939    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    2.2050     .34081     .00000     20.000     .00000    
+Machine.NumberBusy                          .69345     .02445     .00000     1.0000     .00000    
+Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Machine.Utilization                         .69345     .02445     .00000     1.0000     .00000    
+drilling.Queue.NumberInQueue                1.5116     .32264     .00000     19.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               5939.0    
+Part.NumberOut                              5939.0    
+Machine.NumberSeized                        5939.0    
+Machine.ScheduledUtilization                .69345    
+System.NumberOut                            5939.0    
+
+Beginning replication 3 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 3 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/25/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/25/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Friday, April 25, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0503     .02874      5.7228E-5 13.175       5979    
+Part.NVATime                                .00000     .00000     .00000     .00000       5979    
+Part.WaitTime                               2.4988     .57120     .00000     107.16       5979    
+Part.TranTime                               .00000     .00000     .00000     .00000       5979    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5979    
+Part.TotalTime                              3.5491     .58599      5.7228E-5 110.81       5979    
+drilling.Queue.WaitingTime                  2.4984     .57120     .00000     107.16       5980    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    2.3585     .37191     .00000     20.000     2.0000    
+Machine.NumberBusy                          .69818     .02502     .00000     1.0000     1.0000    
+Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Machine.Utilization                         .69818     .02502     .00000     1.0000     1.0000    
+drilling.Queue.NumberInQueue                1.6603     .35501     .00000     19.000     1.0000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               5981.0    
+Part.NumberOut                              5979.0    
+Machine.NumberSeized                        5980.0    
+Machine.ScheduledUtilization                .69818    
+System.NumberOut                            5979.0    
+
+Beginning replication 4 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 4 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/25/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/25/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Friday, April 25, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0786     .02971      4.2870E-5 10.605       5897    
+Part.NVATime                                .00000     .00000     .00000     .00000       5897    
+Part.WaitTime                               2.7254     .76311     .00000     131.16       5897    
+Part.TranTime                               .00000     .00000     .00000     .00000       5897    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5897    
+Part.TotalTime                              3.8040     .78328     .00121     133.02       5897    
+drilling.Queue.WaitingTime                  2.7249     .76311     .00000     131.16       5898    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    2.4925     .44512     .00000     27.000     1.0000    
+Machine.NumberBusy                          .70676     .02914     .00000     1.0000     1.0000    
+Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Machine.Utilization                         .70676     .02914     .00000     1.0000     1.0000    
+drilling.Queue.NumberInQueue                1.7857     .42281     .00000     26.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               5898.0    
+Part.NumberOut                              5897.0    
+Machine.NumberSeized                        5898.0    
+Machine.ScheduledUtilization                .70676    
+System.NumberOut                            5897.0    
+
+Beginning replication 5 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 5 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/25/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/25/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Friday, April 25, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0456     .03060      1.0425E-4 11.178       6074    
+Part.NVATime                                .00000     .00000     .00000     .00000       6074    
+Part.WaitTime                               2.4171     .21894     .00000     62.125       6074    
+Part.TranTime                               .00000     .00000     .00000     .00000       6074    
+Part.OtherTime                              .00000     .00000     .00000     .00000       6074    
+Part.TotalTime                              3.4627     .23318      1.5216E-4 63.049       6074    
+drilling.Queue.WaitingTime                  2.4171     .21894     .00000     62.125       6074    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    2.3369     .21896     .00000     17.000     .00000    
+Machine.NumberBusy                          .70567     .02307     .00000     1.0000     .00000    
+Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Machine.Utilization                         .70567     .02307     .00000     1.0000     .00000    
+drilling.Queue.NumberInQueue                1.6312     .20694     .00000     16.000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               6074.0    
+Part.NumberOut                              6074.0    
+Machine.NumberSeized                        6074.0    
+Machine.ScheduledUtilization                .70567    
+System.NumberOut                            6074.0    
+
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Output Summary for 5 Replications
+
+Project: Unnamed Project                                             Run execution date : 4/25/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/25/2025
+
+
+                                             OUTPUTS
+
+Identifier                                 Average    Half-width Minimum    Maximum # Replications
+___________________________________________________________________________________________________
+
+Part.NumberIn                               5985.0     87.622     5898.0     6074.0     5
+Part.NumberOut                              5982.0     85.715     5897.0     6074.0     5
+Machine.NumberSeized                        5982.6     85.497     5898.0     6074.0     5
+Machine.ScheduledUtilization                .70639     .01639     .69345     .72787     5
+System.NumberOut                            5982.0     85.715     5897.0     6074.0     5
+
+Simulation run time: 0.02 minutes.
+Simulation run complete.
