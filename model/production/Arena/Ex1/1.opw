@@ -1,4 +1,5 @@
 [RESOURCES]
+Resource 1
 [VARIABLES]
 Process 3.NumberIn
 Part Arrival.NumberOut

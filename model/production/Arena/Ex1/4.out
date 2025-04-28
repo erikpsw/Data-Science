@@ -4,11 +4,11 @@
 
                                   Summary for Replication 1 of 5
 
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+Project: Unnamed Project                                             Run execution date : 4/28/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/28/2025
 
 Replication ended at time      : 10000.0 Minutes 
-Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics were cleared at time: 1000.0 Minutes (Monday, April 28, 2025, 16:40:00)
 Statistics accumulated for time: 9000.0 Minutes
 Base Time Units: Minutes
 
@@ -17,28 +17,35 @@ Base Time Units: Minutes
 Identifier                                  Average   Half Width  Minimum    Maximum   Observations
 ___________________________________________________________________________________________________
 
-Part.VATime                                 1.0529     (Corr)     .00000     2.5160       5980    
-Part.NVATime                                .00000     .00000     .00000     .00000       5980    
-Part.WaitTime                               .00000     .00000     .00000     .00000       5980    
-Part.TranTime                               .00000     .00000     .00000     .00000       5980    
-Part.OtherTime                              .00000     .00000     .00000     .00000       5980    
-Part.TotalTime                              1.0529     (Corr)     .00000     2.5160       5980    
+Part.VATime                                 1.0533     (Corr)     .00000     2.5160       5981    
+Part.NVATime                                .00000     .00000     .00000     .00000       5981    
+Part.WaitTime                               .26913     .03651     .00000     5.8598       5981    
+Part.TranTime                               .00000     .00000     .00000     .00000       5981    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5981    
+Part.TotalTime                              1.3225     .04179     .00000     6.8530       5981    
+Process 3.Queue.WaitingTime                 .26908     .03651     .00000     5.8598       5982    
 
                                      DISCRETE-CHANGE VARIABLES
 
 Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
 ___________________________________________________________________________________________________
 
-Part.WIP                                    .69966     .00914     .00000     4.0000     1.0000    
+Part.WIP                                    .87902     .02881     .00000     6.0000     1.0000    
+Resource 1.NumberBusy                       .70017     .00898     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .70017     .00898     .00000     1.0000     1.0000    
+Process 3.Queue.NumberInQueue               .17885     .02324     .00000     5.0000     .00000    
 
                                              OUTPUTS
 
 Identifier                                   Value
 _____________________________________________________________
 
-Part.NumberIn                               5980.0    
-Part.NumberOut                              5980.0    
-System.NumberOut                            5980.0    
+Part.NumberIn                               5982.0    
+Part.NumberOut                              5981.0    
+Resource 1.NumberSeized                     5982.0    
+Resource 1.ScheduledUtilization             .70017    
+System.NumberOut                            5981.0    
 
 Beginning replication 2 of 5
 
@@ -47,11 +54,11 @@ Beginning replication 2 of 5
 
                                   Summary for Replication 2 of 5
 
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+Project: Unnamed Project                                             Run execution date : 4/28/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/28/2025
 
 Replication ended at time      : 10000.0 Minutes 
-Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics were cleared at time: 1000.0 Minutes (Monday, April 28, 2025, 16:40:00)
 Statistics accumulated for time: 9000.0 Minutes
 Base Time Units: Minutes
 
@@ -60,28 +67,35 @@ Base Time Units: Minutes
 Identifier                                  Average   Half Width  Minimum    Maximum   Observations
 ___________________________________________________________________________________________________
 
-Part.VATime                                 1.0549     .00963     .00000     2.5625       5974    
-Part.NVATime                                .00000     .00000     .00000     .00000       5974    
-Part.WaitTime                               .00000     .00000     .00000     .00000       5974    
-Part.TranTime                               .00000     .00000     .00000     .00000       5974    
-Part.OtherTime                              .00000     .00000     .00000     .00000       5974    
-Part.TotalTime                              1.0549     .00963     .00000     2.5625       5974    
+Part.VATime                                 1.0559     .00982     .00000     2.5625       5980    
+Part.NVATime                                .00000     .00000     .00000     .00000       5980    
+Part.WaitTime                               .24872     .02922     .00000     4.6947       5980    
+Part.TranTime                               .00000     .00000     .00000     .00000       5980    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5980    
+Part.TotalTime                              1.3046     .03305     .00000     5.8448       5980    
+Process 3.Queue.WaitingTime                 .24874     .02905     .00000     4.6947       5979    
 
                                      DISCRETE-CHANGE VARIABLES
 
 Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
 ___________________________________________________________________________________________________
 
-Part.WIP                                    .70033     .00945     .00000     4.0000     2.0000    
+Part.WIP                                    .86682     (Corr)     .00000     5.0000     .00000    
+Resource 1.NumberBusy                       .70157     .00995     .00000     1.0000     .00000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .70157     .00995     .00000     1.0000     .00000    
+Process 3.Queue.NumberInQueue               .16525     .02131     .00000     4.0000     .00000    
 
                                              OUTPUTS
 
 Identifier                                   Value
 _____________________________________________________________
 
-Part.NumberIn                               5975.0    
-Part.NumberOut                              5974.0    
-System.NumberOut                            5974.0    
+Part.NumberIn                               5979.0    
+Part.NumberOut                              5980.0    
+Resource 1.NumberSeized                     5979.0    
+Resource 1.ScheduledUtilization             .70157    
+System.NumberOut                            5980.0    
 
 Beginning replication 3 of 5
 
@@ -90,11 +104,11 @@ Beginning replication 3 of 5
 
                                   Summary for Replication 3 of 5
 
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+Project: Unnamed Project                                             Run execution date : 4/28/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/28/2025
 
 Replication ended at time      : 10000.0 Minutes 
-Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics were cleared at time: 1000.0 Minutes (Monday, April 28, 2025, 16:40:00)
 Statistics accumulated for time: 9000.0 Minutes
 Base Time Units: Minutes
 
@@ -103,28 +117,35 @@ Base Time Units: Minutes
 Identifier                                  Average   Half Width  Minimum    Maximum   Observations
 ___________________________________________________________________________________________________
 
-Part.VATime                                 1.0508     .00986     .00000     2.3909       6021    
-Part.NVATime                                .00000     .00000     .00000     .00000       6021    
-Part.WaitTime                               .00000     .00000     .00000     .00000       6021    
-Part.TranTime                               .00000     .00000     .00000     .00000       6021    
-Part.OtherTime                              .00000     .00000     .00000     .00000       6021    
-Part.TotalTime                              1.0508     .00986     .00000     2.3909       6021    
+Part.VATime                                 1.0502     .01030     .00000     2.3909       6018    
+Part.NVATime                                .00000     .00000     .00000     .00000       6018    
+Part.WaitTime                               .25853     .03545     .00000     4.8832       6018    
+Part.TranTime                               .00000     .00000     .00000     .00000       6018    
+Part.OtherTime                              .00000     .00000     .00000     .00000       6018    
+Part.TotalTime                              1.3087     .04082     .00000     6.0076       6018    
+Process 3.Queue.WaitingTime                 .25850     .03524     .00000     4.8832       6018    
 
                                      DISCRETE-CHANGE VARIABLES
 
 Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
 ___________________________________________________________________________________________________
 
-Part.WIP                                    .70301     .00881     .00000     3.0000     1.0000    
+Part.WIP                                    .87487     .02916     .00000     5.0000     1.0000    
+Resource 1.NumberBusy                       .70219     .00875     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .70219     .00875     .00000     1.0000     1.0000    
+Process 3.Queue.NumberInQueue               .17267     .02267     .00000     4.0000     .00000    
 
                                              OUTPUTS
 
 Identifier                                   Value
 _____________________________________________________________
 
-Part.NumberIn                               6021.0    
-Part.NumberOut                              6021.0    
-System.NumberOut                            6021.0    
+Part.NumberIn                               6016.0    
+Part.NumberOut                              6018.0    
+Resource 1.NumberSeized                     6018.0    
+Resource 1.ScheduledUtilization             .70219    
+System.NumberOut                            6018.0    
 
 Beginning replication 4 of 5
 
@@ -133,11 +154,11 @@ Beginning replication 4 of 5
 
                                   Summary for Replication 4 of 5
 
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+Project: Unnamed Project                                             Run execution date : 4/28/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/28/2025
 
 Replication ended at time      : 10000.0 Minutes 
-Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
+Statistics were cleared at time: 1000.0 Minutes (Monday, April 28, 2025, 16:40:00)
 Statistics accumulated for time: 9000.0 Minutes
 Base Time Units: Minutes
 
@@ -146,62 +167,24 @@ Base Time Units: Minutes
 Identifier                                  Average   Half Width  Minimum    Maximum   Observations
 ___________________________________________________________________________________________________
 
-Part.VATime                                 1.0607     .00811     .00000     2.5455       5969    
-Part.NVATime                                .00000     .00000     .00000     .00000       5969    
-Part.WaitTime                               .00000     .00000     .00000     .00000       5969    
-Part.TranTime                               .00000     .00000     .00000     .00000       5969    
-Part.OtherTime                              .00000     .00000     .00000     .00000       5969    
-Part.TotalTime                              1.0607     .00811     .00000     2.5455       5969    
-
-                                     DISCRETE-CHANGE VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
-___________________________________________________________________________________________________
-
-Part.WIP                                    .70347     .00907     .00000     4.0000     .00000    
-
-                                             OUTPUTS
-
-Identifier                                   Value
-_____________________________________________________________
-
-Part.NumberIn                               5968.0    
-Part.NumberOut                              5969.0    
-System.NumberOut                            5969.0    
-
-Beginning replication 5 of 5
-
-                                      ARENA Simulation Results
-                                          1923437477@qq.com
-
-                                  Summary for Replication 5 of 5
-
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
-
-Replication ended at time      : 10000.0 Minutes 
-Statistics were cleared at time: 1000.0 Minutes (Saturday, April 26, 2025, 16:40:00)
-Statistics accumulated for time: 9000.0 Minutes
-Base Time Units: Minutes
-
-                                           TALLY VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Observations
-___________________________________________________________________________________________________
-
-Part.VATime                                 1.0443     .01087     .00000     2.5334       5975    
+Part.VATime                                 1.0620     .00882     .00000     2.5455       5975    
 Part.NVATime                                .00000     .00000     .00000     .00000       5975    
-Part.WaitTime                               .00000     .00000     .00000     .00000       5975    
+Part.WaitTime                               .26366     .02051     .00000     4.2213       5975    
 Part.TranTime                               .00000     .00000     .00000     .00000       5975    
 Part.OtherTime                              .00000     .00000     .00000     .00000       5975    
-Part.TotalTime                              1.0443     .01087     .00000     2.5334       5975    
+Part.TotalTime                              1.3257     .02431     .00000     5.2171       5975    
+Process 3.Queue.WaitingTime                 .26361     .02051     .00000     4.2213       5976    
 
                                      DISCRETE-CHANGE VARIABLES
 
 Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
 ___________________________________________________________________________________________________
 
-Part.WIP                                    .69337     .01136     .00000     4.0000     1.0000    
+Part.WIP                                    .88014     .02416     .00000     5.0000     1.0000    
+Resource 1.NumberBusy                       .70510     .00936     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .70510     .00936     .00000     1.0000     1.0000    
+Process 3.Queue.NumberInQueue               .17504     .01709     .00000     4.0000     .00000    
 
                                              OUTPUTS
 
@@ -210,7 +193,59 @@ _____________________________________________________________
 
 Part.NumberIn                               5976.0    
 Part.NumberOut                              5975.0    
+Resource 1.NumberSeized                     5976.0    
+Resource 1.ScheduledUtilization             .70510    
 System.NumberOut                            5975.0    
+
+Beginning replication 5 of 5
+
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 5 of 5
+
+Project: Unnamed Project                                             Run execution date : 4/28/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/28/2025
+
+Replication ended at time      : 10000.0 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Monday, April 28, 2025, 16:40:00)
+Statistics accumulated for time: 9000.0 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Part.VATime                                 1.0434     .01085     .00000     2.5334       5970    
+Part.NVATime                                .00000     .00000     .00000     .00000       5970    
+Part.WaitTime                               .24094     .03299     .00000     3.8074       5970    
+Part.TranTime                               .00000     .00000     .00000     .00000       5970    
+Part.OtherTime                              .00000     .00000     .00000     .00000       5970    
+Part.TotalTime                              1.2844     .04077     .00000     4.8473       5970    
+Process 3.Queue.WaitingTime                 .24094     .03328     .00000     3.8074       5970    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Part.WIP                                    .85208     .03237     .00000     4.0000     1.0000    
+Resource 1.NumberBusy                       .69226     .01108     .00000     1.0000     1.0000    
+Resource 1.NumberScheduled                  1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Resource 1.Utilization                      .69226     .01108     .00000     1.0000     1.0000    
+Process 3.Queue.NumberInQueue               .15982     .02296     .00000     3.0000     .00000    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Part.NumberIn                               5970.0    
+Part.NumberOut                              5970.0    
+Resource 1.NumberSeized                     5970.0    
+Resource 1.ScheduledUtilization             .69226    
+System.NumberOut                            5970.0    
 
 
                                       ARENA Simulation Results
@@ -218,8 +253,8 @@ System.NumberOut                            5975.0
 
                                   Output Summary for 5 Replications
 
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+Project: Unnamed Project                                             Run execution date : 4/28/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/28/2025
 
 
                                              OUTPUTS
@@ -227,9 +262,11 @@ Analyst: 1923437477@qq.com                                           Model revis
 Identifier                                 Average    Half-width Minimum    Maximum # Replications
 ___________________________________________________________________________________________________
 
-Part.NumberIn                               5984.0     26.232     5968.0     6021.0     5
-Part.NumberOut                              5983.8     26.268     5969.0     6021.0     5
-System.NumberOut                            5983.8     26.268     5969.0     6021.0     5
+Part.NumberIn                               5984.6     22.477     5970.0     6016.0     5
+Part.NumberOut                              5984.8     23.675     5970.0     6018.0     5
+Resource 1.NumberSeized                     5985.0     23.555     5970.0     6018.0     5
+Resource 1.ScheduledUtilization             .70026     .00598     .69226     .70510     5
+System.NumberOut                            5984.8     23.675     5970.0     6018.0     5
 
-Simulation run time: 0.00 minutes.
+Simulation run time: 0.02 minutes.
 Simulation run complete.

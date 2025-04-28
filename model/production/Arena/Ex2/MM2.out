@@ -1,15 +1,17 @@
+SIMAN Run Controller.
 
+30.781592 Minutes>
                                       ARENA Simulation Results
                                           1923437477@qq.com
 
                                   Summary for Replication 1 of 5
 
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
+Project: Unnamed Project                                             Run execution date : 4/27/2025
+Analyst: 1923437477@qq.com                                           Model revision date: 4/27/2025
 
-Replication ended at time      : 100.0 Minutes 
-Statistics were cleared at time: 10.0 Minutes (Saturday, April 26, 2025, 00:10:00)
-Statistics accumulated for time: 90.0 Minutes
+Replication ended at time      : 30.781592 Minutes 
+Statistics were cleared at time: 10.0 Minutes (Sunday, April 27, 2025, 00:10:00)
+Statistics accumulated for time: 20.781592 Minutes
 Base Time Units: Minutes
 
                                            TALLY VARIABLES
@@ -17,27 +19,27 @@ Base Time Units: Minutes
 Identifier                                  Average   Half Width  Minimum    Maximum   Observations
 ___________________________________________________________________________________________________
 
-Part.VATime                                 2.5837     (Insuf)    .00698     9.1572         35    
-Part.NVATime                                .00000     (Insuf)    .00000     .00000         35    
-Part.WaitTime                               21.347     (Insuf)    .80610     33.442         35    
-Part.TranTime                               .00000     (Insuf)    .00000     .00000         35    
-Part.OtherTime                              .00000     (Insuf)    .00000     .00000         35    
-Part.TotalTime                              23.931     (Insuf)    7.0115     37.615         35    
-Hold 1.Queue.WaitingTime                    18.304     (Insuf)    .00000     31.242         36    
-M1.Queue.WaitingTime                        5.0039     (Insuf)    .32675     11.541         17    
-M2.Queue.WaitingTime                        5.0570     (Insuf)    .86976     15.478         18    
+Part.VATime                                 3.6129     (Insuf)    .56433     6.2054          6    
+Part.NVATime                                .00000     (Insuf)    .00000     .00000          6    
+Part.WaitTime                               10.103     (Insuf)    .80610     16.850          6    
+Part.TranTime                               .00000     (Insuf)    .00000     .00000          6    
+Part.OtherTime                              .00000     (Insuf)    .00000     .00000          6    
+Part.TotalTime                              13.716     (Insuf)    7.0115     18.004          6    
+Hold 1.Queue.WaitingTime                    8.5511     (Insuf)    .00000     16.009          6    
+M1.Queue.WaitingTime                        6.5656     (Insuf)    3.2909     8.3434          3    
+M2.Queue.WaitingTime                        7.2359     (Insuf)    6.4072     8.5006          3    
 
                                      DISCRETE-CHANGE VARIABLES
 
 Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
 ___________________________________________________________________________________________________
 
-Part.WIP                                    13.318     (Insuf)    2.0000     21.000     18.000    
+Part.WIP                                    6.8101     (Insuf)    2.0000     9.0000     5.0000    
 Machine.NumberBusy                          1.0000     (Insuf)    .00000     1.0000     1.0000    
 Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
 Machine.Utilization                         1.0000     (Insuf)    .00000     1.0000     1.0000    
-Hold 1.Queue.NumberInQueue                  10.330     (Insuf)    .00000     18.000     15.000    
-M1.Queue.NumberInQueue                      .98795     (Insuf)    .00000     1.0000     1.0000    
+Hold 1.Queue.NumberInQueue                  3.8622     (Insuf)    .00000     6.0000     3.0000    
+M1.Queue.NumberInQueue                      .94781     (Insuf)    .00000     1.0000     .00000    
 M2.Queue.NumberInQueue                      1.0000     (Insuf)    .00000     1.0000     1.0000    
 
                                              OUTPUTS
@@ -45,248 +47,9 @@ M2.Queue.NumberInQueue                      1.0000     (Insuf)    .00000     1.0
 Identifier                                   Value
 _____________________________________________________________
 
-Part.NumberIn                               51.000    
-Part.NumberOut                              35.000    
-Machine.NumberSeized                        35.000    
+Part.NumberIn                               9.0000    
+Part.NumberOut                              6.0000    
+Machine.NumberSeized                        6.0000    
 Machine.ScheduledUtilization                1.0000    
-System.NumberOut                            35.000    
+System.NumberOut                            6.0000    
 
-Beginning replication 2 of 5
-
-                                      ARENA Simulation Results
-                                          1923437477@qq.com
-
-                                  Summary for Replication 2 of 5
-
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
-
-Replication ended at time      : 100.0 Minutes 
-Statistics were cleared at time: 10.0 Minutes (Saturday, April 26, 2025, 00:10:00)
-Statistics accumulated for time: 90.0 Minutes
-Base Time Units: Minutes
-
-                                           TALLY VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Observations
-___________________________________________________________________________________________________
-
-Part.VATime                                 2.3982     (Insuf)    .04926     16.165         38    
-Part.NVATime                                .00000     (Insuf)    .00000     .00000         38    
-Part.WaitTime                               21.546     (Insuf)    .00000     41.858         38    
-Part.TranTime                               .00000     (Insuf)    .00000     .00000         38    
-Part.OtherTime                              .00000     (Insuf)    .00000     .00000         38    
-Part.TotalTime                              23.944     (Insuf)    2.0754     44.004         38    
-Hold 1.Queue.WaitingTime                    19.648     (Insuf)    .00000     39.336         39    
-M1.Queue.WaitingTime                        4.4596     (Insuf)    .87726     16.214         20    
-M2.Queue.WaitingTime                        4.5808     (Insuf)    .89623     16.574         18    
-
-                                     DISCRETE-CHANGE VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
-___________________________________________________________________________________________________
-
-Part.WIP                                    17.432     (Insuf)    1.0000     30.000     28.000    
-Machine.NumberBusy                          1.0000     (Insuf)    .00000     1.0000     1.0000    
-Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Machine.Utilization                         1.0000     (Insuf)    .00000     1.0000     1.0000    
-Hold 1.Queue.NumberInQueue                  14.515     (Insuf)    .00000     27.000     25.000    
-M1.Queue.NumberInQueue                      .98002     (Insuf)    .00000     1.0000     1.0000    
-M2.Queue.NumberInQueue                      .93638     (Insuf)    .00000     1.0000     1.0000    
-
-                                             OUTPUTS
-
-Identifier                                   Value
-_____________________________________________________________
-
-Part.NumberIn                               64.000    
-Part.NumberOut                              38.000    
-Machine.NumberSeized                        38.000    
-Machine.ScheduledUtilization                1.0000    
-System.NumberOut                            38.000    
-
-Beginning replication 3 of 5
-
-                                      ARENA Simulation Results
-                                          1923437477@qq.com
-
-                                  Summary for Replication 3 of 5
-
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
-
-Replication ended at time      : 100.0 Minutes 
-Statistics were cleared at time: 10.0 Minutes (Saturday, April 26, 2025, 00:10:00)
-Statistics accumulated for time: 90.0 Minutes
-Base Time Units: Minutes
-
-                                           TALLY VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Observations
-___________________________________________________________________________________________________
-
-Part.VATime                                 1.9509     (Insuf)    .02362     7.1528         48    
-Part.NVATime                                .00000     (Insuf)    .00000     .00000         48    
-Part.WaitTime                               20.570     (Insuf)    2.8454     32.280         48    
-Part.TranTime                               .00000     (Insuf)    .00000     .00000         48    
-Part.OtherTime                              .00000     (Insuf)    .00000     .00000         48    
-Part.TotalTime                              22.521     (Insuf)    9.5127     33.693         48    
-Hold 1.Queue.WaitingTime                    18.343     (Insuf)    5.8257     31.289         48    
-M1.Queue.WaitingTime                        3.9019     (Insuf)    .54938     7.8899         24    
-M2.Queue.WaitingTime                        3.8523     (Insuf)    .45706     9.2839         24    
-
-                                     DISCRETE-CHANGE VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
-___________________________________________________________________________________________________
-
-Part.WIP                                    15.843     (Insuf)    6.0000     28.000     27.000    
-Machine.NumberBusy                          1.0000     (Insuf)    .00000     1.0000     1.0000    
-Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Machine.Utilization                         1.0000     (Insuf)    .00000     1.0000     1.0000    
-Hold 1.Queue.NumberInQueue                  12.843     (Insuf)    3.0000     25.000     24.000    
-M1.Queue.NumberInQueue                      1.0000     (Insuf)    .00000     1.0000     1.0000    
-M2.Queue.NumberInQueue                      1.0000     (Insuf)    .00000     1.0000     1.0000    
-
-                                             OUTPUTS
-
-Identifier                                   Value
-_____________________________________________________________
-
-Part.NumberIn                               69.000    
-Part.NumberOut                              48.000    
-Machine.NumberSeized                        48.000    
-Machine.ScheduledUtilization                1.0000    
-System.NumberOut                            48.000    
-
-Beginning replication 4 of 5
-
-                                      ARENA Simulation Results
-                                          1923437477@qq.com
-
-                                  Summary for Replication 4 of 5
-
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
-
-Replication ended at time      : 100.0 Minutes 
-Statistics were cleared at time: 10.0 Minutes (Saturday, April 26, 2025, 00:10:00)
-Statistics accumulated for time: 90.0 Minutes
-Base Time Units: Minutes
-
-                                           TALLY VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Observations
-___________________________________________________________________________________________________
-
-Part.VATime                                 2.2640     (Insuf)     7.3731E-4 10.459         44    
-Part.NVATime                                .00000     (Insuf)    .00000     .00000         44    
-Part.WaitTime                               14.620     (Insuf)    .00000     30.028         44    
-Part.TranTime                               .00000     (Insuf)    .00000     .00000         44    
-Part.OtherTime                              .00000     (Insuf)    .00000     .00000         44    
-Part.TotalTime                              16.884     (Insuf)    5.9986     32.415         44    
-Hold 1.Queue.WaitingTime                    12.055     (Insuf)    .80633     25.087         44    
-M1.Queue.WaitingTime                        4.4594     (Insuf)    .30852     10.690         22    
-M2.Queue.WaitingTime                        4.2218     (Insuf)    .83231     9.7300         22    
-
-                                     DISCRETE-CHANGE VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
-___________________________________________________________________________________________________
-
-Part.WIP                                    11.034     (Insuf)    3.0000     21.000     20.000    
-Machine.NumberBusy                          1.0000     (Insuf)    .00000     1.0000     1.0000    
-Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Machine.Utilization                         1.0000     (Insuf)    .00000     1.0000     1.0000    
-Hold 1.Queue.NumberInQueue                  8.0348     (Insuf)    .00000     18.000     17.000    
-M1.Queue.NumberInQueue                      1.0000     (Insuf)    .00000     1.0000     1.0000    
-M2.Queue.NumberInQueue                      1.0000     (Insuf)    .00000     1.0000     1.0000    
-
-                                             OUTPUTS
-
-Identifier                                   Value
-_____________________________________________________________
-
-Part.NumberIn                               59.000    
-Part.NumberOut                              44.000    
-Machine.NumberSeized                        44.000    
-Machine.ScheduledUtilization                1.0000    
-System.NumberOut                            44.000    
-
-Beginning replication 5 of 5
-
-                                      ARENA Simulation Results
-                                          1923437477@qq.com
-
-                                  Summary for Replication 5 of 5
-
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
-
-Replication ended at time      : 100.0 Minutes 
-Statistics were cleared at time: 10.0 Minutes (Saturday, April 26, 2025, 00:10:00)
-Statistics accumulated for time: 90.0 Minutes
-Base Time Units: Minutes
-
-                                           TALLY VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Observations
-___________________________________________________________________________________________________
-
-Part.VATime                                 1.8526     (Insuf)    .03083     8.7316         47    
-Part.NVATime                                .00000     (Insuf)    .00000     .00000         47    
-Part.WaitTime                               18.130     (Insuf)    .00000     32.086         47    
-Part.TranTime                               .00000     (Insuf)    .00000     .00000         47    
-Part.OtherTime                              .00000     (Insuf)    .00000     .00000         47    
-Part.TotalTime                              19.983     (Insuf)    .44164     32.365         47    
-Hold 1.Queue.WaitingTime                    15.247     (Insuf)    .00000     27.237         50    
-M1.Queue.WaitingTime                        3.2442     (Insuf)    .00000     10.131         26    
-M2.Queue.WaitingTime                        3.6783     (Insuf)    1.2443     11.346         22    
-
-                                     DISCRETE-CHANGE VARIABLES
-
-Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
-___________________________________________________________________________________________________
-
-Part.WIP                                    15.723     (Insuf)    .00000     31.000     30.000    
-Machine.NumberBusy                          .98271     (Insuf)    .00000     1.0000     1.0000    
-Machine.NumberScheduled                     1.0000     (Insuf)    1.0000     1.0000     1.0000    
-Machine.Utilization                         .98271     (Insuf)    .00000     1.0000     1.0000    
-Hold 1.Queue.NumberInQueue                  12.854     (Insuf)    .00000     28.000     27.000    
-M1.Queue.NumberInQueue                      .95246     (Insuf)    .00000     1.0000     1.0000    
-M2.Queue.NumberInQueue                      .93451     (Insuf)    .00000     1.0000     1.0000    
-
-                                             OUTPUTS
-
-Identifier                                   Value
-_____________________________________________________________
-
-Part.NumberIn                               77.000    
-Part.NumberOut                              47.000    
-Machine.NumberSeized                        48.000    
-Machine.ScheduledUtilization                .98271    
-System.NumberOut                            47.000    
-
-
-                                      ARENA Simulation Results
-                                          1923437477@qq.com
-
-                                  Output Summary for 5 Replications
-
-Project: Unnamed Project                                             Run execution date : 4/26/2025
-Analyst: 1923437477@qq.com                                           Model revision date: 4/26/2025
-
-
-                                             OUTPUTS
-
-Identifier                                 Average    Half-width Minimum    Maximum # Replications
-___________________________________________________________________________________________________
-
-Part.NumberIn                               64.000     12.227     51.000     77.000     5
-Part.NumberOut                              42.400     7.0556     35.000     48.000     5
-Machine.NumberSeized                        42.600     7.3235     35.000     48.000     5
-Machine.ScheduledUtilization                .99654     .00960     .98271     1.0000     5
-System.NumberOut                            42.400     7.0556     35.000     48.000     5
-
-Simulation run time: 0.02 minutes.
-Simulation run complete.

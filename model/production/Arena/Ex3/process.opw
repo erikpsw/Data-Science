@@ -1,0 +1,18 @@
+[RESOURCES]
+Machine
+InspectionResource
+[VARIABLES]
+Decide 4.NumberOut False
+Process 8.NumberIn
+Part Arrival.NumberOut
+M1.NumberOut
+M4.NumberOut
+M3.NumberOut
+M2.NumberOut
+Dispose 1.NumberOut
+M1.NumberIn
+M4.NumberIn
+M3.NumberIn
+M2.NumberIn
+Process 8.NumberOut
+Decide 4.NumberOut True
