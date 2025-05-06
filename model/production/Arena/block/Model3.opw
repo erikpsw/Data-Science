@@ -1,0 +1,9 @@
+[RESOURCES]
+Filler
+DummyMachine
+[VARIABLES]
+Capping.NumberOut
+Create 1.NumberOut
+Filling.NumberOut
+Capping.NumberIn
+Filling.NumberIn

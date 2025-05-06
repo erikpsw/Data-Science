@@ -1,0 +1,12 @@
+[RESOURCES]
+DummyMachine
+Machine1
+Machine2
+[VARIABLES]
+Create 1.NumberOut
+M2.NumberOut
+M3.NumberOut
+M1.NumberOut
+M2.NumberIn
+M3.NumberIn
+M1.NumberIn

@@ -1,0 +1,79 @@
+SIMAN Run Controller.
+
+1026.6917 Minutes>
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 4/30/2025
+Analyst: Administrator                                               Model revision date: 4/30/2025
+
+Replication ended at time      : 1026.6917 Minutes 
+Statistics were cleared at time: 1000.0 Minutes (Wednesday, April 30, 2025, 16:40:00)
+Statistics accumulated for time: 26.691655 Minutes
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                                 --         --         --         --          0
+Entity 1.NVATime                                --         --         --         --          0
+Entity 1.WaitTime                               --         --         --         --          0
+Entity 1.TranTime                               --         --         --         --          0
+Entity 1.OtherTime                              --         --         --         --          0
+Entity 1.TotalTime                              --         --         --         --          0
+M1.Queue.WaitingTime                        1020.1     (Insuf)    1013.6     1026.6          3    
+M3.Queue.WaitingTime                        159.11     (Insuf)    159.11     159.11          1    
+M2.Queue.WaitingTime                        150.67     (Insuf)    150.67     150.67          2    
+M2 Blocked.Queue.WaitingTime                .00000     (Insuf)    .00000     .00000          1    
+M1 Blocked.Queue.WaitingTime                .00000     (Insuf)    .00000     .00000          3    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                140.00     (Insuf)    140.00     140.00     140.00    
+DummyMachine.NumberBusy                     .55358     (Insuf)    .00000     1.0000     .00000    
+DummyMachine.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+DummyMachine.Utilization                    .55358     (Insuf)    .00000     1.0000     .00000    
+Machine1.NumberBusy                         .63260     (Insuf)    .00000     1.0000     1.0000    
+Machine1.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Machine1.Utilization                        .63260     (Insuf)    .00000     1.0000     1.0000    
+Machine2.NumberBusy                         .60723     (Insuf)    .00000     1.0000     1.0000    
+Machine2.NumberScheduled                    1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Machine2.Utilization                        .60723     (Insuf)    .00000     1.0000     1.0000    
+M1.Queue.NumberInQueue                      115.24     (Insuf)    114.00     116.00     114.00    
+M3.Queue.NumberInQueue                      9.8387     (Insuf)    9.0000     10.000     10.000    
+M2.Queue.NumberInQueue                      13.127     (Insuf)    12.000     14.000     14.000    
+M2 Blocked.Queue.NumberInQueue              .12018     (Insuf)    .00000     1.0000     1.0000    
+M1 Blocked.Queue.NumberInQueue              .00000     (Insuf)    .00000     .00000     .00000    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+ProductNumber                                     2  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           .00000    
+Entity 1.NumberOut                          .00000    
+DummyMachine.NumberSeized                   1.0000    
+DummyMachine.ScheduledUtilization           .55358    
+Machine1.NumberSeized                       3.0000    
+Machine1.ScheduledUtilization               .63260    
+Machine2.NumberSeized                       2.0000    
+Machine2.ScheduledUtilization               .60723    
+System.NumberOut                            .00000    
+
+
+Simulation run time: 0.37 minutes.
+Simulation run complete.

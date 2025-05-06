@@ -1,0 +1,61 @@
+SIMAN Run Controller.
+
+636.5 Minutes>
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 4/30/2025
+Analyst: Administrator                                               Model revision date: 4/30/2025
+
+Replication ended at time      : 636.5 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+Entity 1.VATime                                 --         --         --         --          0
+Entity 1.NVATime                                --         --         --         --          0
+Entity 1.WaitTime                               --         --         --         --          0
+Entity 1.TranTime                               --         --         --         --          0
+Entity 1.OtherTime                              --         --         --         --          0
+Entity 1.TotalTime                              --         --         --         --          0
+Filler Blocked.Queue.WaitingTime            2.0821     (Insuf)    .00000     3.5000         73    
+Capping.Queue.WaitingTime                   76.890     (Insuf)    .00000     100.00         64    
+Filling.Queue.WaitingTime                   282.88     (Insuf)    .00000     626.50         74    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+Entity 1.WIP                                140.00     (Insuf)    .00000     140.00     140.00    
+Filler.NumberBusy                           1.0000     (Insuf)    .00000     1.0000     1.0000    
+Filler.NumberScheduled                      1.0000     (Insuf)    1.0000     1.0000     1.0000    
+Filler.Utilization                          1.0000     (Insuf)    .00000     1.0000     1.0000    
+DummyMachine.NumberBusy                     .98979     (Insuf)    .00000     1.0000     1.0000    
+DummyMachine.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+DummyMachine.Utilization                    .98979     (Insuf)    .00000     1.0000     1.0000    
+Filler Blocked.Queue.NumberInQueue          .24430     (Insuf)    .00000     1.0000     1.0000    
+Capping.Queue.NumberInQueue                 8.4383     (Insuf)    .00000     10.000     9.0000    
+Filling.Queue.NumberInQueue                 129.57     (Insuf)    .00000     139.00     129.00    
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           140.00    
+Entity 1.NumberOut                          .00000    
+Filler.NumberSeized                         74.000    
+Filler.ScheduledUtilization                 1.0000    
+DummyMachine.NumberSeized                   64.000    
+DummyMachine.ScheduledUtilization           .98979    
+System.NumberOut                            .00000    
+
+
+Simulation run time: 0.20 minutes.
+Simulation run complete.

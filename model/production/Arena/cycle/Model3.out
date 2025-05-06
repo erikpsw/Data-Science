@@ -1,0 +1,68 @@
+SIMAN Run Controller.
+
+36.624181 Minutes>
+                                      ARENA Simulation Results
+                                          1923437477@qq.com
+
+                                  Summary for Replication 1 of 1
+
+Project: Unnamed Project                                             Run execution date : 4/30/2025
+Analyst: Administrator                                               Model revision date: 4/30/2025
+
+Replication ended at time      : 36.624181 Minutes 
+Base Time Units: Minutes
+
+                                           TALLY VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Observations
+___________________________________________________________________________________________________
+
+AvgSystemTime                               5.2902     (Insuf)    .21160     11.347         23    
+Entity 1.VATime                                 --         --         --         --          0
+Entity 1.NVATime                                --         --         --         --          0
+Entity 1.WaitTime                               --         --         --         --          0
+Entity 1.TranTime                               --         --         --         --          0
+Entity 1.OtherTime                              --         --         --         --          0
+Entity 1.TotalTime                              --         --         --         --          0
+Process 2.Queue.WaitingTime                 3.8120     (Insuf)    .00000     9.9118         23    
+Process 1.Queue.WaitingTime                 13.690     (Insuf)    .00000     32.009         24    
+
+                                     DISCRETE-CHANGE VARIABLES
+
+Identifier                                  Average   Half Width  Minimum    Maximum   Final Value
+___________________________________________________________________________________________________
+
+AvgWIP                                      3.3222     (Insuf)    .00000     7.0000     .00000    
+Entity 1.WIP                                140.00     (Insuf)    .00000     140.00     140.00    
+DummyMachine.NumberBusy                     1.0000     (Insuf)    .00000     1.0000     1.0000    
+DummyMachine.NumberScheduled                1.0000     (Insuf)    1.0000     1.0000     1.0000    
+DummyMachine.Utilization                    1.0000     (Insuf)    .00000     1.0000     1.0000    
+TurningMachine.NumberBusy                   .92833     (Insuf)    .00000     1.0000     .00000    
+TurningMachine.NumberScheduled              1.0000     (Insuf)    1.0000     1.0000     1.0000    
+TurningMachine.Utilization                  .92833     (Insuf)    .00000     1.0000     .00000    
+Process 2.Queue.NumberInQueue               2.3939     (Insuf)    .00000     6.0000     .00000    
+Process 1.Queue.NumberInQueue               135.67     (Insuf)    .00000     139.00     139.00    
+
+                                             COUNTERS
+
+Identifier                                    Count   Limit
+_____________________________________________________________
+
+ProductNumber                                    23  Infinite
+
+                                             OUTPUTS
+
+Identifier                                   Value
+_____________________________________________________________
+
+Entity 1.NumberIn                           140.00    
+Entity 1.NumberOut                          .00000    
+DummyMachine.NumberSeized                   24.000    
+DummyMachine.ScheduledUtilization           1.0000    
+TurningMachine.NumberSeized                 23.000    
+TurningMachine.ScheduledUtilization         .92833    
+System.NumberOut                            .00000    
+
+
+Simulation run time: 0.22 minutes.
+Simulation run complete.

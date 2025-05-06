@@ -3,6 +3,7 @@ Machine
 InspectionResource
 [VARIABLES]
 Decide 4.NumberOut False
+NumQueue
 Process 8.NumberIn
 Part Arrival.NumberOut
 M1.NumberOut

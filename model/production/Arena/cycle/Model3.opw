@@ -1,0 +1,10 @@
+[RESOURCES]
+DummyMachine
+TurningMachine
+[VARIABLES]
+Process 2.NumberOut
+Process 2.NumberIn
+Process 1.NumberIn
+Create 1.NumberOut
+WIP
+Process 1.NumberOut
