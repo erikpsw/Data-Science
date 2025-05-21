@@ -86,8 +86,7 @@ def calculate_moving_average(data, window_size):
     return result
 
 def visualize_sequences(sequences, avg_sequence):
-    # Convert time values from arbitrary units to minutes for plotting
-    avg_times_min = [t/60 for t, _ in avg_sequence]  # Convert to minutes
+    avg_times_min = [t for t, _ in avg_sequence]
     avg_values = [v for _, v in avg_sequence]
     
     window_sizes = [5, 10, 20, 50]
@@ -98,14 +97,14 @@ def visualize_sequences(sequences, avg_sequence):
     
     for idx, window_size in enumerate(window_sizes):
         ma_sequence = calculate_moving_average(avg_sequence, window_size)
-        ma_times_min = [t/60 for t, _ in ma_sequence]  # Convert to minutes
+        ma_times_min = [t for t, _ in ma_sequence] 
         ma_values = [v for _, v in ma_sequence]
         plt.plot(ma_times_min, ma_values, ma_styles[idx], linewidth=2, 
                  label=f'移动平均-{window_size}')
     
     plt.xlabel('时间（分钟）')
     plt.ylabel('数量')
-    plt.title('平均序列与移动平均')
+    plt.title('韦尔奇法运行结果')
     plt.legend()
     plt.grid(True)
     plt.savefig('moving_averages.png')
@@ -116,7 +115,7 @@ def visualize_sequences(sequences, avg_sequence):
     interpolated_sequences = [interpolate_sequence_to_integer_times(seq) for seq in sequences]
     
     for i, seq in enumerate(interpolated_sequences):
-        times_min = [t/60 for t, _ in seq]  # Convert to minutes
+        times_min = [t for t, _ in seq]
         values = [v for _, v in seq]
         color = colors[i % len(colors)]
         plt.plot(times_min, values, color=color, alpha=0.7, label=f'序列 {i+1}')
@@ -124,7 +123,7 @@ def visualize_sequences(sequences, avg_sequence):
     plt.plot(avg_times_min, avg_values, 'r-', linewidth=3.5, label='平均序列')
     plt.xlabel('时间（分钟）')
     plt.ylabel('数量')
-    plt.title(f'原始序列（共 {len(sequences)} 条）')
+    plt.title(f'Arena仿真结果（共 {len(sequences)} 次）')
     plt.legend()
     plt.grid(True)
     plt.savefig('original_sequences.png')
