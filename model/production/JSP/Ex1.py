@@ -780,4 +780,4 @@ if __name__ == "__main__":
     plt.rcParams['font.sans-serif'] = ['SimHei', 'DejaVu Sans']
     plt.rcParams['axes.unicode_minus'] = False
 
-    main(choice=1, max_iterations=100, max_attempts=3000000)
+    main(choice=1, max_iterations=10000, max_attempts=3000000)

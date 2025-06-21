@@ -15,7 +15,7 @@ class Operation:
         self.op_index = op_index      # 在工件中的工序索引
         self.machine = machine        # 加工机器
         self.processing_time = processing_time  # 加工时间
-        self.id = f"O_{job_id}{op_index}"      # 工序唯一标识
+        self.id = f"O_{job_id}_{op_index}"      # 工序唯一标识
     
     def __str__(self):
         return f"{self.id}(J{self.job_id}, M{self.machine}, t={self.processing_time})"
@@ -1173,4 +1173,4 @@ if __name__ == "__main__":
     plt.rcParams['font.sans-serif'] = ['SimHei', 'DejaVu Sans']
     plt.rcParams['axes.unicode_minus'] = False
 
-    main(choice=1, max_iterations=10000, max_attempts=3000000)
+    main(choice=2, max_iterations=10000, max_attempts=3000000)
